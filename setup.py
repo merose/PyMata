@@ -1,29 +1,12 @@
-#!/usr/bin/env python
+## ! DO NOT MANUALLY INVOKE THIS setup.py, USE CATKIN INSTEAD
 
-from setuptools import setup
+from distutils.core import setup
+from catkin_pkg.python_setup import generate_distutils_setup
 
-setup(
-    name='PyMata',
+# fetch values from package.xml
+setup_args = generate_distutils_setup(
     packages=['PyMata'],
-    install_requires=['pyserial>=2.7'],
-    version='2.12',
-    description="A Python Protocol Abstraction Library For Arduino Firmata",
-    author='Alan Yorinks',
-    author_email='MisterYsLab@gmail.com',
-    url='https://github.com/MrYsLab/PyMata',
-    download_url='https://github.com/MrYsLab/PyMata',
-    keywords=['Firmata', 'Arduino', 'Protocol'],
-    classifiers=[
-        'Development Status :: 5 - Production/Stable',
-        'Environment :: Other Environment',
-        'Intended Audience :: Developers',
-        'Intended Audience :: Education',
-        'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
-        'Operating System :: OS Independent',
-        'Programming Language :: Python',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3.5',
-        'Topic :: Utilities',
-        'Topic :: Home Automation',
-    ],
-)
+    package_dir={'': '.'})
+
+setup(**setup_args)
+

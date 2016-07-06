@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package format="2">
+  <name>PyMata</name>
+  <version>1.0.0</version>
+  <description>
+    A ROS wrapper on the PyMata implementation of the Firmata protocol.
+    The original source is at https://github.com/MrYsLab/PyMata.
+  </description>
+  <author>Mark Rose</author>
+  <maintainer email="markrose@acm.org">Mark Rose</maintainer>
+  <url type="website">https://github.com/merose/PyMata</url>
+  <url type="repository">https://github.com/merose/PyMata.git</url>
+  <url type="bugtracker">https://github.com/merose/PyMata/issues</url>
+  <license>GPL</license>
+  <buildtool_depend>catkin</buildtool_depend>
+
+</package>
